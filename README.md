@@ -7,7 +7,7 @@ Pipeline zbudowany w **Snakemake** i umożliwia:
 - Pobranie artykułów z PubMed dla określoncyh lat i zapytań oraz ich analizę ilościową 
 
 Wszystkie parametry można konfigurować w odpowiednich plikach YAML w katalogu `config/`.  
-Środowisko potrzebne do uruchomienia pipeline’u jest opisane w `env.yaml`.
+Środowisko potrzebne do uruchomienia pipeline’u jest opisane w `requirements.txt`.
 
 ## Instrukcja obsługi i opis działania
 
@@ -17,11 +17,8 @@ Pipeline został zbudowany w **Snakemake** i składa się z trzech głównych cz
 
 - Python 3.12  
 - Snakemake  
-- Conda (do tworzenia środowisk z `env.yaml`)  
 
-Środowisko Conda z wymaganymi pakietami jest zdefiniowane w `env.yaml`. 
-Snakemake automatycznie tworzy i aktywuje to środowisko dla każdej reguły.
-
+Należy utworzyć srodowisko i pobrać wszystkie wymagania z pliku 'requirements.txt'
 
 ### 2. Konfiguracja
 
