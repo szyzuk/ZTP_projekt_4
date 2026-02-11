@@ -1,0 +1,4 @@
+#--------config do PM25----------
+miasta:
+  - "Warszawa"
+  - "Katowice"

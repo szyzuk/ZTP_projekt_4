@@ -1,0 +1,7 @@
+#--------config do PubMed----------
+PubMed_search_params:
+  email:
+  lim_wynikow: 100
+  zapytania:
+
+  top_n: 10
