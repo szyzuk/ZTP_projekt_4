@@ -24,8 +24,6 @@ rule pm25_year:
         config="config/pm25.yaml"
     output:
         exceedance_days = "results/pm25/{Y}/exceedance_days.csv",
-    conda:
-        "env.yaml"
     shell:
         """
             mkdir -p results/pm25/{wildcards.Y}/figures
@@ -45,8 +43,6 @@ rule pubmed_year:
         papers="results/literature/{Y}/pubmed_papers.csv",
         summary="results/literature/{Y}/summary_by_year.csv",
         top="results/literature/{Y}/top_journals.csv"
-    conda:
-        "env.yaml"
     shell:
         """
             mkdir -p results/literature/{wildcards.Y}
